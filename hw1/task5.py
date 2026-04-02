@@ -182,11 +182,11 @@ class Clicker:
                     elif event.key == pygame.K_RIGHT:
                         for c in self.circles: c[0] = c[0] + 10
                     elif event.key == pygame.K_LEFT:
-                        for c in self.circles: c[0] = c[0] + 10
+                        for c in self.circles: c[0] = c[0] - 10
                     elif event.key == pygame.K_DOWN:
                         for c in self.circles: c[1] = c[1] + 10
                     elif event.key == pygame.K_UP:
-                        for c in self.circles: c[1] = c[1] + 10
+                        for c in self.circles: c[1] = c[1] - 10
             
             if self.is_shrinking:
                 for i in range(len(self.radii)):
