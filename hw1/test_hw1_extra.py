@@ -69,7 +69,6 @@ def test_task3_empty() -> None:
     assert_equal_task3(task3.merge_dictionaries([]), {})
 
 def test_task3_full_merge() -> None:
-    """Tests the full merge of d1, d2, d3, d4."""
     actual = task3.merge_dictionaries([d1, d2, d3, d4])
     expected = {
         "id": [1, 2, 3, 4],

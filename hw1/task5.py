@@ -75,26 +75,9 @@ class Clicker:
     user clicks.
     """
 
-import sys
-
-import pygame
-
-# In our example, we will be alternating between red, blue, and green
-# circles. We explain the meaning of these 3-tuples further below.
-CIRCLE_COLORS = [(255, 0, 0), (0, 255, 0), (0, 0, 255)]
-
-
-class Clicker:
-    """
-    This class demonstrates how to handle mouse clicks in Pygame.
-    It maintains a list of circle positions that are updated in response to
-    user clicks.
-    """
-
     circles: list[list[int]]
     surface: pygame.Surface
     clock: pygame.time.Clock
-    
     radii: list[int]
     is_shrinking: bool
 
@@ -104,7 +87,7 @@ class Clicker:
         window, and initiates the event loop.
         """
 
-        #added ththe following for shrinking effect
+        # added ththe following to enable the shrinking effect
         self.radii = [] 
         self.is_shrinking = False
 
@@ -187,20 +170,24 @@ class Clicker:
                     if event.key == pygame.K_q:
                         pygame.quit()
                         sys.exit()
+                    
                     elif event.key == pygame.K_ESCAPE:
                         self.circles = []
                         self.radii = []
                         self.is_shrinking = False
+                    
                     elif event.key == pygame.K_SPACE:
                         self.is_shrinking = not self.is_shrinking
+                    
                     elif event.key == pygame.K_RIGHT:
-                        for c in self.circles: c[0] += 10
+                        for c in self.circles: c[0] = c[0] + 10
                     elif event.key == pygame.K_LEFT:
-                        for c in self.circles: c[0] -= 10
+                        for c in self.circles: c[0] = c[0] + 10
                     elif event.key == pygame.K_DOWN:
-                        for c in self.circles: c[1] += 10
+                        for c in self.circles: c[1] = c[1] + 10
                     elif event.key == pygame.K_UP:
-                        for c in self.circles: c[1] -= 10
+                        for c in self.circles: c[1] = c[1] + 10
+            
             if self.is_shrinking:
                 for i in range(len(self.radii)):
                     if self.radii[i] > 0:
@@ -226,9 +213,8 @@ class Clicker:
         https://www.pygame.org/docs/ref/draw.html
         """
 
-        # Fill the surface with a grey color
+        # Fill the surface with a lime green color
         # (128, 128, 128) is an RGB (Red Green Blue) color code,
-        # specifying the amount of each color on a scale from 0 to 255.
         self.surface.fill((50, 205, 50))
 
         # For each circle in our list of circles, draw the circle.

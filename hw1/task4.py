@@ -136,12 +136,3 @@ class Card:
                     uncommon[feature] = (self.features[feature], \
                         other_features[feature])
         return uncommon
-
-card1 = Card({"color": "red", "shape": "circle", "number": "3"})
-card2 = Card({"color": "red", "shape": "square", "number": "1"})
-card3 = Card({"color": "red", "shape": "square", "number": "7"})
-card4 = Card({"color": "red", "shape": "square", "hobby": "cooking"})
-card5 = Card({"hair": "brown", "eyes": "blue", "expression": "smiling"})
-print(card2.common_features(card3.features))
-print(card2.conflicting_features(card3.features))
-print(card1.conflicting_features(card2.features))

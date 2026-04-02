@@ -36,12 +36,4 @@ def merge_dictionaries(dicts: list[dict[str, int]]) -> dict[str, list[int]]:
                 out[key].append(val)
     return out
 
-d1 = {"id": 1, "favorite_num": 1, "scoops_of_ice_cream": 1}
-d2 = {"id": 2, "favorite_num": 142, "scoops_of_ice_cream": 3}
-d3 = {"id": 3, "scoops_of_ice_cream": 3}
-d4 = {"id": 4, "favorite_num": 142, "year": 2026}
-print(merge_dictionaries([]))
-print(merge_dictionaries([d1]))
-print(merge_dictionaries([d1, d2, d3, d4]))
-
 

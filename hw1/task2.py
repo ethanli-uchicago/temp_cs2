@@ -43,8 +43,4 @@ def affordable_subsequences(budget: int, ints: list[int]) -> list[list[int]]:
     return subseq_without + subseq_with
 
 
-print(affordable_subsequences(6, [1, 4, 7, 3, 2, 6]))
-
-
-
    

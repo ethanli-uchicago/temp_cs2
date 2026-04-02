@@ -1,6 +1,6 @@
 {
-  "created": 1775155692.136172,
-  "duration": 0.39898228645324707,
+  "created": 1775162153.974935,
+  "duration": 0.41150593757629395,
   "exitcode": 0,
   "root": "/Users/ethanli/cs142-s26/hw1",
   "environment": {},
@@ -109,15 +109,15 @@
         ""
       ],
       "setup": {
-        "duration": 0.00010312499944120646,
+        "duration": 0.00012612499995157123,
         "outcome": "passed"
       },
       "call": {
-        "duration": 0.3841740409989143,
+        "duration": 0.3990240409912076,
         "outcome": "passed"
       },
       "teardown": {
-        "duration": 9.579199831932783e-05,
+        "duration": 9.616700117476285e-05,
         "outcome": "passed"
       }
     },
@@ -133,15 +133,15 @@
         ""
       ],
       "setup": {
-        "duration": 5.5374999647028744e-05,
+        "duration": 6.150000263005495e-05,
         "outcome": "passed"
       },
       "call": {
-        "duration": 0.00036175000423099846,
+        "duration": 0.0003737499937415123,
         "outcome": "passed"
       },
       "teardown": {
-        "duration": 5.454100028146058e-05,
+        "duration": 5.716600571759045e-05,
         "outcome": "passed"
       }
     },
@@ -156,15 +156,15 @@
         ""
       ],
       "setup": {
-        "duration": 5.0000002374872565e-05,
+        "duration": 5.454100028146058e-05,
         "outcome": "passed"
       },
       "call": {
-        "duration": 7.191700569819659e-05,
+        "duration": 8.358299965038896e-05,
         "outcome": "passed"
       },
       "teardown": {
-        "duration": 3.954199200961739e-05,
+        "duration": 4.837500455323607e-05,
         "outcome": "passed"
       }
     },
@@ -179,15 +179,15 @@
         ""
       ],
       "setup": {
-        "duration": 4.416600859258324e-05,
+        "duration": 4.6250002924352884e-05,
         "outcome": "passed"
       },
       "call": {
-        "duration": 5.7124998420476913e-05,
+        "duration": 5.575000250246376e-05,
         "outcome": "passed"
       },
       "teardown": {
-        "duration": 4.22910088673234e-05,
+        "duration": 4.050000279676169e-05,
         "outcome": "passed"
       }
     },
@@ -205,15 +205,15 @@
         ""
       ],
       "setup": {
-        "duration": 0.00018295799964107573,
+        "duration": 0.0001880000054370612,
         "outcome": "passed"
       },
       "call": {
-        "duration": 5.554201197810471e-05,
+        "duration": 6.25829998170957e-05,
         "outcome": "passed"
       },
       "teardown": {
-        "duration": 5.775000317953527e-05,
+        "duration": 5.245799547992647e-05,
         "outcome": "passed"
       }
     },
@@ -231,15 +231,15 @@
         ""
       ],
       "setup": {
-        "duration": 0.00014454100164584816,
+        "duration": 0.0001673340011620894,
         "outcome": "passed"
       },
       "call": {
-        "duration": 5.300001066643745e-05,
+        "duration": 6.820898852311075e-05,
         "outcome": "passed"
       },
       "teardown": {
-        "duration": 4.470899875741452e-05,
+        "duration": 0.00011820900544989854,
         "outcome": "passed"
       }
     },
@@ -254,15 +254,15 @@
         ""
       ],
       "setup": {
-        "duration": 4.487500700633973e-05,
+        "duration": 5.15409919898957e-05,
         "outcome": "passed"
       },
       "call": {
-        "duration": 4.675000673159957e-05,
+        "duration": 5.4916992667131126e-05,
         "outcome": "passed"
       },
       "teardown": {
-        "duration": 4.0166996768675745e-05,
+        "duration": 3.845899482257664e-05,
         "outcome": "passed"
       }
     },
@@ -277,15 +277,15 @@
         ""
       ],
       "setup": {
-        "duration": 4.212500061839819e-05,
+        "duration": 4.1709005017764866e-05,
         "outcome": "passed"
       },
       "call": {
-        "duration": 5.208299262449145e-05,
+        "duration": 5.658400186803192e-05,
         "outcome": "passed"
       },
       "teardown": {
-        "duration": 3.729200398083776e-05,
+        "duration": 3.854099486488849e-05,
         "outcome": "passed"
       }
     },
@@ -300,15 +300,15 @@
         ""
       ],
       "setup": {
-        "duration": 4.287500632926822e-05,
+        "duration": 3.912499232683331e-05,
         "outcome": "passed"
       },
       "call": {
-        "duration": 4.512500890996307e-05,
+        "duration": 4.57499991171062e-05,
         "outcome": "passed"
       },
       "teardown": {
-        "duration": 7.525000546593219e-05,
+        "duration": 3.5832999856211245e-05,
         "outcome": "passed"
       }
     },
@@ -323,15 +323,15 @@
         ""
       ],
       "setup": {
-        "duration": 5.5374999647028744e-05,
+        "duration": 3.866699989885092e-05,
         "outcome": "passed"
       },
       "call": {
-        "duration": 6.254200707189739e-05,
+        "duration": 4.1875013266690075e-05,
         "outcome": "passed"
       },
       "teardown": {
-        "duration": 5.341599171515554e-05,
+        "duration": 3.6249999538995326e-05,
         "outcome": "passed"
       }
     },
@@ -346,15 +346,15 @@
         ""
       ],
       "setup": {
-        "duration": 4.645800800062716e-05,
+        "duration": 3.749999450519681e-05,
         "outcome": "passed"
       },
       "call": {
-        "duration": 5.0458009354770184e-05,
+        "duration": 4.749999789055437e-05,
         "outcome": "passed"
       },
       "teardown": {
-        "duration": 4.187499871477485e-05,
+        "duration": 3.979199391324073e-05,
         "outcome": "passed"
       }
     },
@@ -369,15 +369,15 @@
         ""
       ],
       "setup": {
-        "duration": 4.120801168028265e-05,
+        "duration": 3.8708996726199985e-05,
         "outcome": "passed"
       },
       "call": {
-        "duration": 4.829200042877346e-05,
+        "duration": 4.2208004742860794e-05,
         "outcome": "passed"
       },
       "teardown": {
-        "duration": 4.1332998080179095e-05,
+        "duration": 3.762501000892371e-05,
         "outcome": "passed"
       }
     }
