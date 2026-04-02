@@ -75,15 +75,38 @@ class Clicker:
     user clicks.
     """
 
-    circles: list[tuple[int, int]]
+import sys
+
+import pygame
+
+# In our example, we will be alternating between red, blue, and green
+# circles. We explain the meaning of these 3-tuples further below.
+CIRCLE_COLORS = [(255, 0, 0), (0, 255, 0), (0, 0, 255)]
+
+
+class Clicker:
+    """
+    This class demonstrates how to handle mouse clicks in Pygame.
+    It maintains a list of circle positions that are updated in response to
+    user clicks.
+    """
+
+    circles: list[list[int]]
     surface: pygame.Surface
     clock: pygame.time.Clock
+    
+    radii: list[int]
+    is_shrinking: bool
 
     def __init__(self) -> None:
         """
         The constructor initializes the Pygame modules, sets up the display
         window, and initiates the event loop.
         """
+
+        #added ththe following for shrinking effect
+        self.radii = [] 
+        self.is_shrinking = False
 
         # List to store the positions of circles
         self.circles = []
@@ -139,7 +162,6 @@ class Clicker:
 
                 if event.type == pygame.QUIT:
                     # When the close button of the window is clicked, we...
-
                     # Uninitialize all Pygame modules
                     pygame.quit()
 
@@ -147,7 +169,7 @@ class Clicker:
                     sys.exit()
 
                 elif event.type == pygame.MOUSEBUTTONUP:
-
+                    
                     # When the mouse button is released, add a new circle
                     # In the MOUSEBUTTONUP event, the Event object will include
                     # a "pos" attribute telling us the position of the surface
@@ -156,16 +178,36 @@ class Clicker:
                     # Notice how all we do is add a circle to the list of
                     # circles. We don't actually draw anything on the surface
                     # at this point.
-                    self.circles.append(event.pos)
-
+                    self.circles.append(list(event.pos))
+                    self.radii.append(50)
                     # Uncomment the following line to see the exact positions
                     # that are being clicked on the window.
-
-                    # print(f"Mouse clicked at position {event.pos}")
+                    print(f"Mouse clicked at position {event.pos}")                
+                elif event.type == pygame.KEYDOWN:
+                    if event.key == pygame.K_q:
+                        pygame.quit()
+                        sys.exit()
+                    elif event.key == pygame.K_ESCAPE:
+                        self.circles = []
+                        self.radii = []
+                        self.is_shrinking = False
+                    elif event.key == pygame.K_SPACE:
+                        self.is_shrinking = not self.is_shrinking
+                    elif event.key == pygame.K_RIGHT:
+                        for c in self.circles: c[0] += 10
+                    elif event.key == pygame.K_LEFT:
+                        for c in self.circles: c[0] -= 10
+                    elif event.key == pygame.K_DOWN:
+                        for c in self.circles: c[1] += 10
+                    elif event.key == pygame.K_UP:
+                        for c in self.circles: c[1] -= 10
+            if self.is_shrinking:
+                for i in range(len(self.radii)):
+                    if self.radii[i] > 0:
+                        self.radii[i] = self.radii[i] - 1
 
             # Once we're done processing events, we redraw the window:
             self.draw_window()
-
             # The following ensures the surface is refreshed at 24 frames per
             # second. If we omit this, the surface will be refreshed constantly
             # (which will typically result in the application running slowly,
@@ -191,12 +233,14 @@ class Clicker:
 
         # For each circle in our list of circles, draw the circle.
         for i, circle in enumerate(self.circles):
-            # Alternate circle colors between red, green, and blue
-            color = CIRCLE_COLORS[i % 3]
-
-            # Use pygame.draw.circle to draw a circle
-            pygame.draw.circle(self.surface, color=color,
-                               center=circle, radius=20)
+            # Set single color of circles to be blue
+            color = (0, 0, 255)
+            #Keeps current radius of the circle updated in the window
+            current_radius = self.radii[i]
+            if current_radius > 0:
+                # Use pygame.draw.circle to draw a circle
+                pygame.draw.circle(self.surface, color=color,
+                               center=circle, radius=current_radius)
 
         # Instruct PyGame to actually refresh the window with
         # the elements we have just drawn
