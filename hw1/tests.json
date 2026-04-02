@@ -1,0 +1,394 @@
+{
+  "created": 1775155692.136172,
+  "duration": 0.39898228645324707,
+  "exitcode": 0,
+  "root": "/Users/ethanli/cs142-s26/hw1",
+  "environment": {},
+  "summary": {
+    "passed": 12,
+    "total": 12,
+    "collected": 12
+  },
+  "collectors": [
+    {
+      "nodeid": "",
+      "outcome": "passed",
+      "result": [
+        {
+          "nodeid": "test_hw1_extra.py",
+          "type": "MypyFile"
+        },
+        {
+          "nodeid": "test_hw1_extra.py",
+          "type": "Module"
+        }
+      ]
+    },
+    {
+      "nodeid": "test_hw1_extra.py",
+      "outcome": "passed",
+      "result": [
+        {
+          "nodeid": "test_hw1_extra.py::mypy",
+          "type": "MypyFileItem",
+          "lineno": null
+        },
+        {
+          "nodeid": "test_hw1_extra.py::mypy-status",
+          "type": "MypyStatusItem",
+          "lineno": null
+        }
+      ]
+    },
+    {
+      "nodeid": "test_hw1_extra.py",
+      "outcome": "passed",
+      "result": [
+        {
+          "nodeid": "test_hw1_extra.py::test_task1_to_base_2_250",
+          "type": "Function",
+          "lineno": 14
+        },
+        {
+          "nodeid": "test_hw1_extra.py::test_task1_from_base_9_000843",
+          "type": "Function",
+          "lineno": 17
+        },
+        {
+          "nodeid": "test_hw1_extra.py::test_task2_affordable_subsequences_custom[6-ints0-expected0]",
+          "type": "Function",
+          "lineno": 26
+        },
+        {
+          "nodeid": "test_hw1_extra.py::test_task2_affordable_subsequences_custom[10-ints1-expected1]",
+          "type": "Function",
+          "lineno": 26
+        },
+        {
+          "nodeid": "test_hw1_extra.py::test_task3_empty",
+          "type": "Function",
+          "lineno": 67
+        },
+        {
+          "nodeid": "test_hw1_extra.py::test_task3_full_merge",
+          "type": "Function",
+          "lineno": 70
+        },
+        {
+          "nodeid": "test_hw1_extra.py::test_task4_no_overlapping_features",
+          "type": "Function",
+          "lineno": 82
+        },
+        {
+          "nodeid": "test_hw1_extra.py::test_task4_no_conflicting_features",
+          "type": "Function",
+          "lineno": 93
+        },
+        {
+          "nodeid": "test_hw1_extra.py::test_task4_one_conflicting_feature",
+          "type": "Function",
+          "lineno": 104
+        },
+        {
+          "nodeid": "test_hw1_extra.py::test_task4_two_conflicting_features",
+          "type": "Function",
+          "lineno": 118
+        }
+      ]
+    }
+  ],
+  "tests": [
+    {
+      "nodeid": "test_hw1_extra.py::mypy",
+      "lineno": null,
+      "outcome": "passed",
+      "keywords": [
+        "mypy",
+        "test_hw1_extra.py",
+        "hw1",
+        ""
+      ],
+      "setup": {
+        "duration": 0.00010312499944120646,
+        "outcome": "passed"
+      },
+      "call": {
+        "duration": 0.3841740409989143,
+        "outcome": "passed"
+      },
+      "teardown": {
+        "duration": 9.579199831932783e-05,
+        "outcome": "passed"
+      }
+    },
+    {
+      "nodeid": "test_hw1_extra.py::mypy-status",
+      "lineno": null,
+      "outcome": "passed",
+      "keywords": [
+        "mypy-status",
+        "mypy",
+        "test_hw1_extra.py",
+        "hw1",
+        ""
+      ],
+      "setup": {
+        "duration": 5.5374999647028744e-05,
+        "outcome": "passed"
+      },
+      "call": {
+        "duration": 0.00036175000423099846,
+        "outcome": "passed"
+      },
+      "teardown": {
+        "duration": 5.454100028146058e-05,
+        "outcome": "passed"
+      }
+    },
+    {
+      "nodeid": "test_hw1_extra.py::test_task1_to_base_2_250",
+      "lineno": 14,
+      "outcome": "passed",
+      "keywords": [
+        "test_task1_to_base_2_250",
+        "test_hw1_extra.py",
+        "hw1",
+        ""
+      ],
+      "setup": {
+        "duration": 5.0000002374872565e-05,
+        "outcome": "passed"
+      },
+      "call": {
+        "duration": 7.191700569819659e-05,
+        "outcome": "passed"
+      },
+      "teardown": {
+        "duration": 3.954199200961739e-05,
+        "outcome": "passed"
+      }
+    },
+    {
+      "nodeid": "test_hw1_extra.py::test_task1_from_base_9_000843",
+      "lineno": 17,
+      "outcome": "passed",
+      "keywords": [
+        "test_task1_from_base_9_000843",
+        "test_hw1_extra.py",
+        "hw1",
+        ""
+      ],
+      "setup": {
+        "duration": 4.416600859258324e-05,
+        "outcome": "passed"
+      },
+      "call": {
+        "duration": 5.7124998420476913e-05,
+        "outcome": "passed"
+      },
+      "teardown": {
+        "duration": 4.22910088673234e-05,
+        "outcome": "passed"
+      }
+    },
+    {
+      "nodeid": "test_hw1_extra.py::test_task2_affordable_subsequences_custom[6-ints0-expected0]",
+      "lineno": 26,
+      "outcome": "passed",
+      "keywords": [
+        "test_task2_affordable_subsequences_custom[6-ints0-expected0]",
+        "parametrize",
+        "pytestmark",
+        "6-ints0-expected0",
+        "test_hw1_extra.py",
+        "hw1",
+        ""
+      ],
+      "setup": {
+        "duration": 0.00018295799964107573,
+        "outcome": "passed"
+      },
+      "call": {
+        "duration": 5.554201197810471e-05,
+        "outcome": "passed"
+      },
+      "teardown": {
+        "duration": 5.775000317953527e-05,
+        "outcome": "passed"
+      }
+    },
+    {
+      "nodeid": "test_hw1_extra.py::test_task2_affordable_subsequences_custom[10-ints1-expected1]",
+      "lineno": 26,
+      "outcome": "passed",
+      "keywords": [
+        "test_task2_affordable_subsequences_custom[10-ints1-expected1]",
+        "parametrize",
+        "pytestmark",
+        "10-ints1-expected1",
+        "test_hw1_extra.py",
+        "hw1",
+        ""
+      ],
+      "setup": {
+        "duration": 0.00014454100164584816,
+        "outcome": "passed"
+      },
+      "call": {
+        "duration": 5.300001066643745e-05,
+        "outcome": "passed"
+      },
+      "teardown": {
+        "duration": 4.470899875741452e-05,
+        "outcome": "passed"
+      }
+    },
+    {
+      "nodeid": "test_hw1_extra.py::test_task3_empty",
+      "lineno": 67,
+      "outcome": "passed",
+      "keywords": [
+        "test_task3_empty",
+        "test_hw1_extra.py",
+        "hw1",
+        ""
+      ],
+      "setup": {
+        "duration": 4.487500700633973e-05,
+        "outcome": "passed"
+      },
+      "call": {
+        "duration": 4.675000673159957e-05,
+        "outcome": "passed"
+      },
+      "teardown": {
+        "duration": 4.0166996768675745e-05,
+        "outcome": "passed"
+      }
+    },
+    {
+      "nodeid": "test_hw1_extra.py::test_task3_full_merge",
+      "lineno": 70,
+      "outcome": "passed",
+      "keywords": [
+        "test_task3_full_merge",
+        "test_hw1_extra.py",
+        "hw1",
+        ""
+      ],
+      "setup": {
+        "duration": 4.212500061839819e-05,
+        "outcome": "passed"
+      },
+      "call": {
+        "duration": 5.208299262449145e-05,
+        "outcome": "passed"
+      },
+      "teardown": {
+        "duration": 3.729200398083776e-05,
+        "outcome": "passed"
+      }
+    },
+    {
+      "nodeid": "test_hw1_extra.py::test_task4_no_overlapping_features",
+      "lineno": 82,
+      "outcome": "passed",
+      "keywords": [
+        "test_task4_no_overlapping_features",
+        "test_hw1_extra.py",
+        "hw1",
+        ""
+      ],
+      "setup": {
+        "duration": 4.287500632926822e-05,
+        "outcome": "passed"
+      },
+      "call": {
+        "duration": 4.512500890996307e-05,
+        "outcome": "passed"
+      },
+      "teardown": {
+        "duration": 7.525000546593219e-05,
+        "outcome": "passed"
+      }
+    },
+    {
+      "nodeid": "test_hw1_extra.py::test_task4_no_conflicting_features",
+      "lineno": 93,
+      "outcome": "passed",
+      "keywords": [
+        "test_task4_no_conflicting_features",
+        "test_hw1_extra.py",
+        "hw1",
+        ""
+      ],
+      "setup": {
+        "duration": 5.5374999647028744e-05,
+        "outcome": "passed"
+      },
+      "call": {
+        "duration": 6.254200707189739e-05,
+        "outcome": "passed"
+      },
+      "teardown": {
+        "duration": 5.341599171515554e-05,
+        "outcome": "passed"
+      }
+    },
+    {
+      "nodeid": "test_hw1_extra.py::test_task4_one_conflicting_feature",
+      "lineno": 104,
+      "outcome": "passed",
+      "keywords": [
+        "test_task4_one_conflicting_feature",
+        "test_hw1_extra.py",
+        "hw1",
+        ""
+      ],
+      "setup": {
+        "duration": 4.645800800062716e-05,
+        "outcome": "passed"
+      },
+      "call": {
+        "duration": 5.0458009354770184e-05,
+        "outcome": "passed"
+      },
+      "teardown": {
+        "duration": 4.187499871477485e-05,
+        "outcome": "passed"
+      }
+    },
+    {
+      "nodeid": "test_hw1_extra.py::test_task4_two_conflicting_features",
+      "lineno": 118,
+      "outcome": "passed",
+      "keywords": [
+        "test_task4_two_conflicting_features",
+        "test_hw1_extra.py",
+        "hw1",
+        ""
+      ],
+      "setup": {
+        "duration": 4.120801168028265e-05,
+        "outcome": "passed"
+      },
+      "call": {
+        "duration": 4.829200042877346e-05,
+        "outcome": "passed"
+      },
+      "teardown": {
+        "duration": 4.1332998080179095e-05,
+        "outcome": "passed"
+      }
+    }
+  ],
+  "warnings": [
+    {
+      "message": "Unknown config option: timeout\n",
+      "category": "PytestConfigWarning",
+      "when": "config",
+      "filename": "/Users/ethanli/Library/Python/3.15/lib/python/site-packages/_pytest/config/__init__.py",
+      "lineno": 1428
+    }
+  ]
+}
